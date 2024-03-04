@@ -37,7 +37,7 @@
   width: 260px;
   filter: blur(100px);
   top: 120px;
-  left: 200px;
+  left: 500px;
 }
 
 .aboutUs {
@@ -131,7 +131,7 @@ textarea::placeholder {
   animation: box 10s infinite ease-in-out;
 }
 
-/* @keyframes box {
+@keyframes box {
   0%   {transform: translate(-10%, -20%);}
   15%   {transform: translate(220%,-20%);}
   25%   {transform: translate(170%,7%);}
@@ -163,7 +163,7 @@ textarea::placeholder {
   60%   {transform: translate(-10%,-20%);}
   80%   {transform: translate(100%,20%);}
   100%   {transform: translate(220%,50%);}
-} */
+}
 
 /* Tech stack animation  */
 .blocks {
