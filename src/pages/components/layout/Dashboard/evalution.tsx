@@ -182,7 +182,7 @@ const Evalution = () => {
 
       {/* form */}
 
-      <div className="container-2 rounded-xl px-16 py-10  space-y-16  sm:mt-16 sm:pt-16 gap-4">
+      <div className="container-3 rounded-xl px-16 py-10  space-y-16  sm:mt-16 sm:pt-16 gap-4">
         <div className="flex flex-col lg:grid lg:grid-cols-2  text-3xl ">
           <p className="text-5xl font-semibold text-white lg:w-full pt-10">
             Your journey to transformation begins now. Let’s build something

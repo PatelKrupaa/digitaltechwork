@@ -136,7 +136,7 @@ const AboutUs = () => {
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 md:gap-24 sm:gap-3 md:my-1 sm:my-1 ">
           {Data?.map((item) => {
             return (
-              <div className="flex flex-col container-2 lg:w-80 lg:h-40 sm:w-52 sm:h-30 md:w-52 md:h-48 rounded-3xl px-8 py-5 mt-1">
+              <div className="flex flex-col container-3 lg:w-80 lg:h-40 sm:w-52 sm:h-30 md:w-52 md:h-48 rounded-3xl px-8 py-5 mt-1">
                 <div className="text-center lg:pb-6">
                   <CountUp
                     start={0}
@@ -173,7 +173,7 @@ const AboutUs = () => {
         <div className="grid lg:grid-cols-3 gap-14 sm:grid-cols-1 md:grid-cols-2">
           {Technology?.map((item) => {
             return (
-              <div className="container-2 rounded-3xl px-10 py-5">
+              <div className="container-3 rounded-3xl px-10 py-5">
                 <Image
                   width={56}
                   height={56}
@@ -230,7 +230,7 @@ const AboutUs = () => {
             {footerData?.map((item) => {
               return (
                 <>
-                  <div className="container-2  rounded-3xl px-10 py-5  ">
+                  <div className="container-3  rounded-3xl px-10 py-5  ">
                     <Image src={item.img} alt="img" height={150} width={250} />
                     <p className="text-white text-sm pt-8">{item?.address}</p>
                   </div>
