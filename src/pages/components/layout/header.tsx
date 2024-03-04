@@ -38,7 +38,7 @@ const HeaderPage = () => {
             <a
               key={item.name}
               href={item.href}
-              className="font-semibold leading-6 text-white text-lg font-normal"
+              className="font-semibold leading-6 text-white text-lg"
             >
               {item.name}
             </a>

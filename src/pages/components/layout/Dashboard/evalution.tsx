@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Accordion from "./accordion";
 
 const features = [
   {
@@ -26,10 +27,43 @@ const features = [
     btn: "App design",
   },
 ];
+const faqs = [
+  {
+    title: "What services does your agency offer?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed do.",
+    active: true,
+  },
+  {
+    title: "How do I get started with your agency?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed do.",
+    active: false,
+  },
+  {
+    title: "Can you provide examples of your previous work?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed do.",
+    active: false,
+  },
+  {
+    title: "What is your pricing structure?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed do.",
+    active: false,
+  },
+  {
+    title: "How do I get started with your agency?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed do.",
+    active: false,
+  },
+  {
+    title: "What is your pricing structure?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed do.",
+    active: false,
+  },
+];
 
 const Evalution = () => {
   return (
     <div className="my-24">
+      <div className="background2 "></div>
       <p className="text-white text-5xl font-medium text-center md:mx-12 sm:mx-12 lg:mx-72">
         Your Digital Evolution - Driven by Our Expertise
       </p>
@@ -48,6 +82,7 @@ const Evalution = () => {
 
       {/* Success In Action */}
       <div className="mt-20">
+        <div className="background2"></div>
         <p className="text-white text-5xl font-thin text-center md:mx-12 sm:mx-12 lg:mx-72">
           Success In Action
         </p>
@@ -60,7 +95,7 @@ const Evalution = () => {
 
         {features.map((feature) => (
           <>
-            <div className=" container-2 rounded-xl px-16 py-10 space-y-16 sm:mt-16 mt-10">
+            <div className=" container-3 rounded-xl px-16 py-10 space-y-16 sm:mt-16 mt-10">
               <div
                 key={feature.name}
                 className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 text-3xl "
@@ -115,6 +150,36 @@ const Evalution = () => {
           </a>
         </div>
       </div>
+
+      {/* FAQ */}
+
+      <div className="grid lg:grid-cols-5 flex md:flex-col-reverse sm:flex-col-reverse gap-10">
+        <div className="col-span-2">
+          <h1 className=" text-5xl text-white ">Frequently Asked Questions </h1>
+          <p className="text-white">
+            Quick answers to common queries. We've curated a resourceful space
+            to address your concerns. If you can't find what you're looking for,
+            feel free to reach out, and we'll be happy to assist you further.
+          </p>
+        </div>
+        <div className="background"></div>
+
+        <div className="col-span-3 md:col-span-3 ">
+          <div className="divide-y divide-slate-200">
+            {faqs.map((faq, index) => (
+              <Accordion
+                key={index}
+                title={faq.title}
+                id={`faqs-${index}`}
+                active={faq.active}
+              >
+                {faq.text}
+              </Accordion>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* form */}
 
       <div className="container-2 rounded-xl px-16 py-10  space-y-16  sm:mt-16 sm:pt-16 gap-4">

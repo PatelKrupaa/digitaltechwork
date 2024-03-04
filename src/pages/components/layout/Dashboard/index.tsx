@@ -12,6 +12,8 @@ const navigation = [
   { name: "Company", href: "#" },
 ];
 
+
+
 const DashboardPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -22,7 +24,7 @@ const DashboardPage = () => {
 
         <header className="">
           <nav
-            className="mx-auto flex max-w-7xl items-center justify-between py-6 "
+            className="mx-28 flex max-w-full items-center justify-between py-6"
             aria-label="Global"
           >
             <div className="flex lg:flex-1">
@@ -155,6 +157,10 @@ const DashboardPage = () => {
       <Menu />
       <AboutUs />
       <FooterPage />
+
+      {/* accordion test */}
+
+      
     </>
   );
 };

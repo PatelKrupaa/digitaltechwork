@@ -22,13 +22,26 @@
   background: rgba(22, 22, 22, 1) !important;
 }
 
+.background {
+  position: absolute;
+  background: rgba(37, 117, 252, 1);
+  height: 200px;
+  width: 200px;
+  filter: blur(100px);
+}
+
+.background2 {
+  position: relative;
+  background: rgba(37, 117, 252, 0.6);
+  height: 200px;
+  width: 260px;
+  filter: blur(100px);
+  top: 120px;
+  left: 200px;
+}
+
 .aboutUs {
-  background-color: black;
-  background-image: radial-gradient(
-    circle at top left,
-    rgba(41, 50, 100, 0.685),
-    black
-  );
+  background-color: #1b1b1b;
   width: 100%;
   background-size: cover;
   animation: animate 20s infinite ease alternate;
@@ -39,7 +52,11 @@
 }
 
 .container-2 {
-  background: rgb(113 121 126 / 53%);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.container-3 {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 input {
@@ -67,7 +84,7 @@ textarea::placeholder {
 
 .bg-container {
   margin: 0;
-  height: 100vh;
+  height: 60rem;
   width: 100%;
   overflow: hidden !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
@@ -103,79 +120,76 @@ textarea::placeholder {
   background: rgba(21, 27, 40, 1);
 }
 
-/* animation  */
+/* circle animation */
+.bg-container .circle1 {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  background: rgba(61, 107, 192, 0.35);
+  border-radius: 50%;
+  filter: blur(130px);
+  animation: box 10s infinite ease-in-out;
+}
 
 /* @keyframes box {
-  0% {
-    transform: translate(-10%, -20%);
-  }
-  15% {
-    transform: translate(220%, -20%);
-  }
-  25% {
-    transform: translate(170%, 7%);
-  }
-  30% {
-    transform: translate(100%, 20%);
-  }
-  45% {
-    transform: translate(-10%, 50%);
-  }
-  60% {
-    transform: translate(220%, 50%);
-  }
-  80% {
-    transform: translate(100%, 20%);
-  }
-  100% {
-    transform: translate(-10%, -20%);
-  }
+  0%   {transform: translate(-10%, -20%);}
+  15%   {transform: translate(220%,-20%);}
+  25%   {transform: translate(170%,7%);}
+  30%   {transform: translate(100%,20%);}
+  45%  {transform: translate(-10%,50%);}
+  60%   {transform: translate(220%,50%);}
+  80%   {transform: translate(100%,20%);}
+  100%   {transform: translate(-10%,-20%);}
+}
+.bg-container .circle2
+{
+  position: absolute;
+  left: 0;
+  height: 500px;
+  width: 500px;
+  overflow-y: hidden;
+  background: rgba(61, 107, 192, 0.350);
+  border-radius: 50%;
+  filter: blur(130px);
+	animation: box2 10s infinite ease-in-out;
 }
 
 @keyframes box2 {
-  0% {
-    transform: translate(220%, 50%);
-  }
-  15% {
-    transform: translate(-10%, 50%);
-  }
-  25% {
-    transform: translate(70%, 25%);
-  }
-  30% {
-    transform: translate(100%, 20%);
-  }
-  45% {
-    transform: translate(220%, -20%);
-  }
-  60% {
-    transform: translate(-10%, -20%);
-  }
-  80% {
-    transform: translate(100%, 20%);
-  }
-  100% {
-    transform: translate(220%, 50%);
-  }
+  0%   {transform: translate(220%, 50%);}
+  15%   {transform: translate(-10%,50%);}
+  25%   {transform: translate(70%,25%);}
+  30%   {transform: translate(100%,20%);}
+  45%  {transform: translate(220%,-20%);}
+  60%   {transform: translate(-10%,-20%);}
+  80%   {transform: translate(100%,20%);}
+  100%   {transform: translate(220%,50%);}
 } */
 
 /* Tech stack animation  */
-
-.container {
+.blocks {
+  /* background: red; */
   display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 .line {
   display: flex;
-  justify-content: start;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
   text-align: center;
+  gap: 35px;
+  /* background: red; */
 }
 .line li {
   position: relative;
   list-style: none;
-  font-size: 120px;
+  /* font-size: 40px; */
   color: blue;
-  margin: 0 0px 0 0;
 }
 .line li p {
   font-size: 18px;
@@ -185,10 +199,10 @@ textarea::placeholder {
 .line li::before {
   content: "";
   position: absolute;
-  top: 19%;
+  top: 4%;
   left: 50%;
-  height: 3px;
-  width: 134px;
+  height: 1px;
+  width: 240px;
   background: blue;
 }
 @keyframes fadein {
@@ -201,7 +215,7 @@ textarea::placeholder {
 }
 
 .line li:nth-child(1)::before {
-  width: 134px;
+  width: 240px;
   opacity: 1;
   animation: animate1 1s ease-out;
 }
@@ -266,7 +280,7 @@ textarea::placeholder {
     width: 0;
   }
   100% {
-    width: 134px;
+    width: 140px;
   }
 }
 @keyframes animate31 {
@@ -293,7 +307,7 @@ textarea::placeholder {
     width: 0;
   }
   100% {
-    width: 134px;
+    width: 140px;
   }
 }
 @keyframes animate41 {
@@ -320,7 +334,7 @@ textarea::placeholder {
     width: 0;
   }
   100% {
-    width: 134px;
+    width: 140px;
   }
 }
 
@@ -346,8 +360,8 @@ textarea::placeholder {
 }
 
 .card {
-  width: 120px;
-  height: 60px;
+  width: 100px;
+  height: 50px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -414,4 +428,21 @@ textarea::placeholder {
   100% {
     opacity: 1;
   }
+}
+
+/* Accordion Css */
+.accordion-arrow-container {
+  position: relative;
+  width: 24px; /* Adjust as needed */
+  height: 24px; /* Adjust as needed */
+}
+
+.accordion-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hidden {
+  display: none;
 }

@@ -121,21 +121,22 @@ const footerData = [
 const AboutUs = () => {
   return (
     <>
-      <div className="aboutUs px-20">
-        <div className=" grid grid-cols-3 text-white py-20">
+      <div className="aboutUs px-20 ">
+        <div className="background"></div>
+        <div className=" grid grid-cols-3 text-white py-20 ">
           <h1 className=" text-5xl col-span-1">About Us</h1>
           <p className="text-center px-10 col-span-2">
             At the heart of innovation, we create digital solutions that
-            transcend boundaries. We&apos; re not just a tech company; we &apos; re your
-            partners in progress. From small steps to giant leaps, we&apos;re here to
-            redefine your digital experience – because your success is our
-            story.
+            transcend boundaries. We&apos; re not just a tech company; we &apos;
+            re your partners in progress. From small steps to giant leaps,
+            we&apos;re here to redefine your digital experience – because your
+            success is our story.
           </p>
         </div>
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 md:gap-24 sm:gap-3 md:my-1 sm:my-1 ">
           {Data?.map((item) => {
             return (
-              <div className="container-2 lg:w-60 lg:h-36 sm:w-52 sm:h-30 md:w-52 md:h-48 rounded-3xl px-8 py-5 mt-1">
+              <div className="flex flex-col container-2 lg:w-80 lg:h-40 sm:w-52 sm:h-30 md:w-52 md:h-48 rounded-3xl px-8 py-5 mt-1">
                 <div className="text-center lg:pb-6">
                   <CountUp
                     start={0}
@@ -145,7 +146,7 @@ const AboutUs = () => {
                   />
                   <span className="fc-2575FC text-4xl font-bold ">+</span>
                 </div>
-                <span className="text-white text-center text-md font-normal ">
+                <span className="text-white text-center text-lg font-bold ">
                   {" "}
                   {item?.name}
                 </span>
@@ -154,9 +155,10 @@ const AboutUs = () => {
           })}
         </div>
         <div className="lg:my-20 md:my-16 sm:my-16">
-          <Image src="./video.svg" width={1356} height={500} alt="video" />
+          <Image src="./video.svg" width={1720} height={400} alt="video" />
         </div>
 
+        <div className="background"></div>
         <div className=" grid grid-cols-2 text-white py-20">
           <h1 className=" text-5xl">What we do</h1>
           <p className="text-center px-10">
@@ -189,6 +191,7 @@ const AboutUs = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 text-white py-20 ">
+          <div className="background"></div>
           <div>
             <h1 className=" text-5xl">Why choose us?</h1>
             <p className="text-center  sm:pt-3 md:pt-3">
@@ -208,7 +211,7 @@ const AboutUs = () => {
               })}
             </div>
           </div>
-          <div>
+          <div className="flex justify-end">
             <Image
               src="/contactUs.svg"
               height={425}
