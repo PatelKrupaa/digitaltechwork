@@ -26,7 +26,7 @@ const TechStack = () => {
       <div className="background"></div>
 
         <h1 className=" text-5xl col-span-1">Our Tech-Stack</h1>
-        <p className="text-center col-span-2 lg:px-10 md:pt-2 sm:pt-2 font-thin">
+        <p className="text-left col-span-2 lg:px-10 md:pt-2 sm:pt-2 font-thin">
           Empowered by a cutting-edge tech stack, our solutions are crafted with
           precision and innovation. From robust backend frameworks to seamless
           frontend experiences, we leverage the latest technologies for
@@ -53,7 +53,7 @@ const TechStack = () => {
 
           {TechStacks.map((item) => {
             return (
-              <div className="lg:flex lg:flex-1 md:flex sm:flex  mt-3">
+              <div className="lg:flex lg:flex-1 md:flex sm:flex  mt-3" key={item.id}>
                 <a
                   href="#"
                   className="flex w-64 bg-spl-grey lg:w-96 md:w-56 sm:w-40 h-14  py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-2575FC focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-xl px-6 gap-3"
@@ -70,7 +70,7 @@ const TechStack = () => {
         <div className="blocks lg:col-span-3 mt-0">
           <ul className="line">
             <li>
-              <Image src={"./dot.svg"} height={15} width={15} className="ml-16 mt-2"/>
+              <Image src={"./dot.svg"} height={15} width={15} className="ml-16 mt-2" alt=""/>
               <p>Languages</p>
               <div className="container2">
                 <div className="card">
@@ -91,7 +91,7 @@ const TechStack = () => {
               </div>
             </li>
             <li>
-              <Image src={"./dot.svg"} height={15} width={15}  className="ml-16 mt-2" />
+              <Image src={"./dot.svg"} height={15} width={15}  className="ml-16 mt-2" alt=""/>
 
               <p>Frameworks</p>
               <div className="container2">
@@ -113,7 +113,7 @@ const TechStack = () => {
               </div>
             </li>
             <li>
-              <Image src={"./dot.svg"} height={15} width={15}  className="ml-16 mt-2" />
+              <Image src={"./dot.svg"} height={15} width={15}  className="ml-16 mt-2" alt=""/>
               <p>Platforms</p>
               <div className="container2">
                 <div className="card">
@@ -134,7 +134,7 @@ const TechStack = () => {
               </div>
             </li>
             <li>
-              <Image src={"./dot.svg"} height={15} width={15}  className="ml-16 mt-2" />
+              <Image src={"./dot.svg"} height={15} width={15}  className="ml-16 mt-2" alt=""/>
               <p>Servers</p>
               <div className="container2">
                 <div className="card">
@@ -155,7 +155,7 @@ const TechStack = () => {
               </div>
             </li>
             <li>
-              <Image src={"./dot.svg"} height={15} width={15}  className="ml-16 mt-2" />
+              <Image src={"./dot.svg"} height={15} width={15}  className="ml-16 mt-2" alt=""/>
               <p>Database</p>
               <div className="container2">
                 <div className="card">

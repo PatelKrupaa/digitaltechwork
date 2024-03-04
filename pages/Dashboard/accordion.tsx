@@ -48,12 +48,14 @@ export default function Accordion({
               className={`accordion-arrow down ${
                 accordionOpen ? "hidden" : ""
               }`}
+              alt=""
             />
             <Image
               src="./upArrow.svg"
               width={24}
               height={24}
               className={`accordion-arrow up ${accordionOpen ? "" : "hidden"}`}
+              alt=""
             />
           </div>
         </button>

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Menu from "../Dashboard/menu";
-import FooterPage from "../footer";
-import AboutUs from "./aboutUs";
+import Menu from "./Dashboard/menu";
+import FooterPage from "./Footer";
+import AboutUs from "./Dashboard/aboutUs";
 import { Dialog } from "@headlessui/react";
 import Image from "next/image";
 const navigation = [

@@ -95,11 +95,13 @@ const Evalution = () => {
 
         {features.map((feature) => (
           <>
-            <div className=" container-3 rounded-xl px-16 py-10 space-y-16 sm:mt-16 mt-10">
+            <div className="  container-3 rounded-xl px-16 py-10 space-y-16 sm:mt-16 mt-10">
+            <div className="gradiant2"></div>
               <div
                 key={feature.name}
                 className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 text-3xl "
               >
+                
                 <div className="mt-6 lg:col-span-9 lg:mt-0 xl:col-span-7">
                   <a
                     href="#"
@@ -125,6 +127,7 @@ const Evalution = () => {
                       className="mt-3 ml-3"
                     />
                   </div>
+                  {/* <div className="background3"></div> */}
                 </div>
                 <div className="flex-auto lg:col-span-3 xl:col-span-5">
                   <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg ">
@@ -157,9 +160,9 @@ const Evalution = () => {
         <div className="col-span-2">
           <h1 className=" text-5xl text-white ">Frequently Asked Questions </h1>
           <p className="text-white">
-            Quick answers to common queries. We've curated a resourceful space
-            to address your concerns. If you can't find what you're looking for,
-            feel free to reach out, and we'll be happy to assist you further.
+            Quick answers to common queries. We&apos;ve curated a resourceful space
+            to address your concerns. If you can&apos;t find what you&apos;re looking for,
+            feel free to reach out, and we&apos;ll be happy to assist you further.
           </p>
         </div>
         <div className="background"></div>

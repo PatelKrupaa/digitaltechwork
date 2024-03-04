@@ -40,6 +40,39 @@
   left: 500px;
 }
 
+.background3 {
+  position: relative;
+  background: rgba(37, 117, 252, 0.6);
+  height: 200px;
+  width: 260px;
+  filter: blur(100px);
+  top: 120px;
+  left: 100px;
+}
+
+.container-3:nth-of-type(2) .gradiant2{
+  /* opacity: 0; */
+  position: absolute;
+  background: rgba(37, 117, 252, 0.5);
+  height: 200px;
+  width: 260px;
+  filter: blur(120px);
+  transform: translate(-20%, 180%);
+  /* top: 120px;
+  left: 100px; */
+}
+.container-3:nth-of-type(3) .gradiant2{
+  /* opacity: 0; */
+  position: absolute;
+  background: rgba(37, 117, 252, 0.5);
+  height: 200px;
+  width: 260px;
+  filter: blur(120px);
+  transform: translate(350%, 200%);
+  /* top: 120px;
+  left: 100px; */
+}
+
 .aboutUs {
   background-color: #1b1b1b;
   width: 100%;
@@ -88,7 +121,7 @@ textarea::placeholder {
   width: 100%;
   overflow: hidden !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../../public/1.svg");
+    url("../public/1.svg");
   background-size: cover;
 }
 .bg-container .circle1 {
