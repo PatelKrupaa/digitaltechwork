@@ -51,7 +51,7 @@ const TechStack = () => {
 
       {TechStacks.map((item) => {
         return (
-          <div className="lg:flex lg:flex-1 md:flex sm:flex md:w-52 mt-3">
+          <div key={item.id} className="lg:flex lg:flex-1 md:flex sm:flex md:w-52 mt-3">
             <a
               href="#"
               className="flex w-64 bg-spl-grey  py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-2575FC focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-xl px-6 gap-3"
