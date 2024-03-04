@@ -96,103 +96,103 @@ const chooseUs = [
 
 const AboutUs = () => {
   return (
-    <>
-      <div className="aboutUs px-20">
-        <div className=" grid grid-cols-2 text-white py-20">
-          <h1 className=" text-5xl">About Us</h1>
-          <p className="text-center px-10">
-            At the heart of innovation, we create digital solutions that
-            transcend boundaries. We're not just a tech company; we're your
-            partners in progress. From small steps to giant leaps, we're here to
-            redefine your digital experience – because your success is our
-            story.
-          </p>
-        </div>
-        <div className="flex gap-14">
-          {Data?.map((item) => {
-            return (
-              <div className="container-2 w-52 h-36 rounded-3xl px-10 py-5">
-                <div className="text-center">
-                  <CountUp
-                    start={0}
-                    end={item?.count}
-                    duration={12}
-                    className="text-white text-4xl"
-                  />
-                  <span className="fc-2575FC text-4xl ">+</span>
-                </div>
-                <span className="text-white text-center text-sm">
-                  {" "}
-                  {item?.name}
-                </span>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className=" grid grid-cols-2 text-white py-20">
-          <h1 className=" text-5xl">What we do</h1>
-          <p className="text-center px-10">
-            We're your digital architects, utilizing advanced visualization
-            tools and cutting-edge tech stack to engineer custom software and
-            app solutions. Specializing in full-stack services with a focus on
-            cloud and data, our journey extends from ideation to ongoing
-            maintenance.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-3 gap-14">
-          {Technology?.map((item) => {
-            return (
-              <div className="container-2 rounded-3xl px-10 py-5">
-                <Image
-                  width={56}
-                  height={56}
-                  className=" flex-shrink-0 rounded-full"
-                  src={item?.icon}
-                  alt=""
-                />
-                <div className="text-white text-xl pb-3 mt-8">
-                  <p>{item?.title}</p>
-                </div>
-                <span className="text-white text-sm"> {item?.discription}</span>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className=" grid grid-cols-2 text-white py-20">
-          <div>
-            <h1 className=" text-5xl">Why choose us?</h1>
-            <p className="text-center px-10">
-              Partnering with our team is like having a reliable companion on
-              your development journey and beyond. We're not just a company;
-              we're your dedicated allies, ensuring a personalized experience
-              and unwavering support every step of the way.
-            </p>
-            {chooseUs?.map((item) => {
-              return (
-                <div>
-                  <Image src={item?.img} alt="icon" width={46} height={46} />
-                  <p>{item?.title}</p>
-                </div>
-              );
-            })}
-          </div>
-          <div>
-            <Image
-              src="/contactUs.svg"
-              height={425}
-              width={550}
-              alt="contactus"
-            />
-          </div>
-        </div>
-
-        <TechStack />
-        <Evalution />
+    <div className="aboutUs px-20">
+      <div className=" grid grid-cols-2 text-white py-20">
+        <h1 className=" text-5xl">About Us</h1>
+        <p className="text-center px-10">
+          At the heart of innovation, we create digital solutions that transcend
+          boundaries. We `&apos` re not just a tech company we `&apos` re your partners in
+          progress. From small steps to giant leaps, we `&apos` re here to redefine your
+          digital experience – because your success is our story.
+        </p>
       </div>
-    </>
+      <div className="flex gap-14">
+        {Data?.map((item) => {
+          return (
+            <div
+              key={item.count}
+              className="container-2 w-52 h-36 rounded-3xl px-10 py-5"
+            >
+              <div className="text-center">
+                <CountUp
+                  start={0}
+                  end={item?.count}
+                  duration={12}
+                  className="text-white text-4xl"
+                />
+                <span className="fc-2575FC text-4xl ">+</span>
+              </div>
+              <span className="text-white text-center text-sm">
+                {" "}
+                {item?.name}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className=" grid grid-cols-2 text-white py-20">
+        <h1 className=" text-5xl">What we do</h1>
+        <p className="text-center px-10">
+          We`&apos`re your digital architects, utilizing advanced visualization tools
+          and cutting-edge tech stack to engineer custom software and
+          app solutions. Specializing in full-stack services with a focus on
+          cloud and data, our journey extends from ideation to ongoing
+          maintenance.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-3 gap-14">
+        {Technology?.map((item) => {
+          return (
+            <div key={item?.id} className="container-2 rounded-3xl px-10 py-5">
+              <Image
+                width={56}
+                height={56}
+                className=" flex-shrink-0 rounded-full"
+                src={item?.icon}
+                alt=""
+              />
+              <div className="text-white text-xl pb-3 mt-8">
+                <p>{item?.title}</p>
+              </div>
+              <span className="text-white text-sm"> {item?.discription}</span>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className=" grid grid-cols-2 text-white py-20">
+        <div>
+          <h1 className=" text-5xl">Why choose us?</h1>
+          <p className="text-center px-10">
+            Partnering with our team is like having a reliable companion on your
+            development journey and beyond. We`&apos`re not just a company; we`&apos`re your
+            dedicated allies, ensuring a personalized experience and unwavering
+            support every step of the way.
+          </p>
+          {chooseUs?.map((item) => {
+            return (
+              <div key={item.id}>
+                <Image src={item?.img} alt="icon" width={46} height={46} />
+                <p>{item?.title}</p>
+              </div>
+            );
+          })}
+        </div>
+        <div>
+          <Image
+            src="/contactUs.svg"
+            height={425}
+            width={550}
+            alt="contactus"
+          />
+        </div>
+      </div>
+
+      <TechStack />
+      <Evalution />
+    </div>
   );
 };
 
