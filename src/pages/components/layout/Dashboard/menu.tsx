@@ -25,13 +25,13 @@ const Menu = () => {
   ];
 
   return (
-    <div className="">
+    <div className="bg-menu">
       <ul
         role="list"
-        className="h-36 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-5 bg-black "
+        className="lg:h-36 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-5 "
       >
         {people.map((person) => (
-          <li key={person.id} className="col-span-1 flex justify-center">
+          <li key={person.id} className="col-span-1 flex justify-center ">
             <Image
               width={150}
               height={150}

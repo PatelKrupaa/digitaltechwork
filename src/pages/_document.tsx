@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Next demo project </title>
+        <title>Digital-Techworks </title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta content="demo Template" name="description" />
         <meta name="author" content="Shreethemes" />
