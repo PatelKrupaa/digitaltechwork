@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Accordion from "./accordion";
-import { Carousel } from "antd";
-import { useEffect, useState } from "react";
 
 const features = [
   {
@@ -63,23 +61,6 @@ const faqs = [
 ];
 
 const Evalution = () => {
-
-  // const [carouselIndex, setCarouselIndex] = useState(0);
-  // const [animate, setAnimate] = useState(false);
-
-  // const handleCarouselChange = (index: number) => {
-  //   setCarouselIndex(index);
-  //   setAnimate(true);
-  // };
-
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setAnimate(false);
-  //   }, 500);
-
-  //   return () => clearTimeout(timeout);
-  // }, [carouselIndex]);
-
   return (
     <div className="my-36">
       <div className="scratch ">
@@ -87,7 +68,10 @@ const Evalution = () => {
         Your Digital Evolution - Driven by Our Expertise
       </p>
       <div className="flex lg:justify-center md:justify-center sm:justify-center my-7">
-        <Image src="/trial.svg" alt="trail" width={400} height={209} />
+        <div className="scratchbg"></div>
+        <div className="cardscratch">
+          <div className="cardscratchinner"></div>
+        </div>
       </div>
 
       <div className="flex  justify-center ">
@@ -99,7 +83,7 @@ const Evalution = () => {
         </a>
       </div>
       </div>
-      {/* Success In Action */}
+   
       <div className="mt-20">
         <div className="background2"></div>
         <p className="text-white text-5xl font-thin text-center md:mx-12 sm:mx-12 lg:mx-72">
@@ -146,7 +130,6 @@ const Evalution = () => {
                       className="mt-3 ml-3"
                     />
                   </div>
-                  {/* <div className="background3"></div> */}
                 </div>
                 <div className="flex-auto lg:col-span-3 xl:col-span-5">
                   <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg ">
@@ -173,69 +156,6 @@ const Evalution = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-5 md:grid-cols-1 sm:grid-cols-1 gap-10 my-20">
-        <div className="col-span-3 clientCarousel z-40">
-          <Carousel autoplay autoplaySpeed={3000} >
-            {/* {carouselContent.map((content, index) => (
-              <div key={index}>
-                <div style={contentStyle}>
-                  <h1 className="text-5xl text-white py-10 font-medium">{content.title}</h1>
-                  <p className="text-white text-xl font-thin">{content.text}</p>
-                </div>
-              </div>
-            ))} */}
-          </Carousel>
-        </div>
-        <div className="background"></div>
-        <div className="col-span-2 flex-col fadess">
-          {/* <Card
-            bordered={false}
-            className={`w-full lg:w-92 md:w-full sm:w-full mb-5 ${animate && (carouselIndex === 0 || carouselIndex === 1 || carouselIndex === 2 || carouselIndex === 3) ? "slide-in" : ""}`}
-          >
-            <div className="row">
-              <p className="text-black text-xl font-normal">{cardContentOne[carouselIndex].quote}</p>
-            </div>
-            <div className="flex items-center mt-6">
-              <div className="flex-shrink-0 mr-4">
-                <Image src='https://st2.depositphotos.com/1715570/5305/i/450/depositphotos_53059317-stock-photo-close-up-portrait-of-a.jpg' alt="icon" width={60} height={60} className="rounded-full h-10 w-10" />
-              </div>
-              <div className="flex-grow">
-                <div className="flex flex-col">
-                  <div className="text-lg font-semibold">{cardContentOne[carouselIndex].name}</div>
-                  <div className="text-sm">{cardContentOne[carouselIndex].location}</div>
-                </div>
-              </div>
-              <div className="flex-shrink-0">
-                <h1 className="text-5xl text-grey font-medium text-gray-300">,,</h1>
-              </div>
-            </div>
-          </Card>
-          <Card
-            bordered={false}
-            className={`w-full lg:w-82 md:w-full sm:w-full ${animate && (carouselIndex === 0 || carouselIndex === 1 || carouselIndex === 2 || carouselIndex === 3) ? "slide-in" : ""}`}
-          >
-            <div className="row">
-              <p className="text-black text-xl font-normal">{cardContentTwo[carouselIndex].quote}</p>
-            </div>
-            <div className="flex items-center mt-6">
-              <div className="flex-shrink-0 mr-4">
-                <Image src='https://st2.depositphotos.com/1715570/5305/i/450/depositphotos_53059317-stock-photo-close-up-portrait-of-a.jpg' alt="icon" width={60} height={60} className="rounded-full h-10 w-10" />
-              </div>
-              <div className="flex-grow">
-                <div className="flex flex-col">
-                  <div className="text-lg font-semibold">{cardContentTwo[carouselIndex].name}</div>
-                  <div className="text-sm">{cardContentTwo[carouselIndex].location}</div>
-                </div>
-              </div>
-              <div className="flex-shrink">
-                <h1 className="text-5xl text-grey font-medium text-gray-300">,,</h1>
-              </div>
-            </div>
-          </Card> */}
-        </div>
-      </div>
-
-      {/* FAQ */}
 
       <div className="grid lg:grid-cols-5 flex md:flex-col-reverse sm:flex-col-reverse gap-10">
         <div className="col-span-2">
@@ -264,8 +184,6 @@ const Evalution = () => {
           </div>
         </div>
       </div>
-
-      {/* form */}
 
       <div className="contactus container-3 rounded-xl lg:px-16 sm:px-10 md:px-10 min-[320px]:px-5 py-10  space-y-16  sm:mt-16 sm:pt-16 gap-4">
         <div className="flex flex-col lg:grid lg:grid-cols-2  text-3xl ">

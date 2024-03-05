@@ -1266,3 +1266,60 @@ textarea::placeholder {
   }
 }
 
+.scratchbg
+{
+  position: absolute;
+  height: 350px;
+  width: 500px;
+  background: url(/scratch2.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.cardscratch{
+  position: relative;
+  height: 350px;
+  width: 500px;
+  background: url(/scratch.png); 
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.cardscratch::before
+{
+  content: '\2193  Mouse here  \2193';
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: start;
+  z-index: 1000;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  background: transparent;
+  transform: translateX(0px);
+  color: #fff;
+}
+.cardscratchinner{
+  height: 350px;
+  width: 500px;
+  background: url(/scratch2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: center center;
+  transform: translateX(0px);
+  transition: .6s all ease;
+}
+.cardscratch:hover .cardscratchinner{
+  filter: drop-shadow(140px 0px 60px rgba(0,0,0,.9));
+  transform: translateX(-600px);
+}
+.cardscratch:hover .cardscratch::before{
+  transform: translate(-600px);
+}
