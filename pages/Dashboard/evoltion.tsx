@@ -70,8 +70,14 @@ const Evalution = () => {
       const windowHeight = window.innerHeight;
 
       features.forEach((_, index) => {
-        const sectionTop = document.getElementById(`evaluation-section-${index}`).offsetTop;
-        const sectionHeight = document.getElementById(`evaluation-section-${index}`).offsetHeight;
+        const sectionElement = document.getElementById(`evaluation-section-${index}`);
+        let sectionTop = 0;
+        let sectionHeight = 0;
+
+        if (sectionElement) {
+          sectionTop = sectionElement.offsetTop;
+          sectionHeight = sectionElement.offsetHeight;
+        }
 
         // Calculate the scroll progress within the section for each item
         const scrollProgress = Math.min(1, (scrollTop - sectionTop + windowHeight) / sectionHeight);
