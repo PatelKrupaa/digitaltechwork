@@ -59,7 +59,7 @@ const TechStack = () => {
     />
   );
 
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(1024);
   console.log(width);
 
   useEffect(() => {
