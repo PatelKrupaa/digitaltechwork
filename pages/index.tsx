@@ -135,7 +135,7 @@ const DashboardPage = () => {
         {/* Header ends */}
         <h1 className="lg:text-title md:text-5xl min-[320px]:text-4xl sm:text-4xl  text-white lg:text-center lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 pt-60 font-bold min-[320px]:text-left">
           <div className="fadess">
-            <h1 className="cssanimation sequence fadeInBottom">
+            <h1 className="cssanimation sequence fadeInBottom min-[320px]:pl-2">
               {" "}
               Transforming Your Business Digitally With{" "}
               <span className="fc-2575FC">Innovation</span>
