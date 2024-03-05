@@ -1092,7 +1092,7 @@ textarea::placeholder {
 }
 @keyframes revealCards {
   0%{
-    transform: translateY(-500px);
+    transform: translateY(300px);
   }
   100%{
     transform: translateY(0px);
