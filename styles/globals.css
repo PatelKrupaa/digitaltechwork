@@ -821,17 +821,17 @@ textarea::placeholder {
 @media only screen and (max-width: 800px) {
   .scratchbg
   {
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .cardscratch{
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .cardscratchinner
   {
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
 
   .techimg {
@@ -847,17 +847,17 @@ textarea::placeholder {
 @media only screen and (max-width: 700px) {
   .scratchbg
   {
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .cardscratch{
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .cardscratchinner
   {
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .techimg {
     display: flex;
@@ -872,17 +872,17 @@ textarea::placeholder {
 @media only screen and (max-width: 520px) {
   .scratchbg
   {
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .cardscratch{
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .cardscratchinner
   {
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .techimg {
     display: flex;
@@ -1064,17 +1064,17 @@ textarea::placeholder {
 @media screen and (max-width: 640px) {
   .scratchbg
   {
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .cardscratch{
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .cardscratchinner
   {
-    height: 200px;
-    width: 240px;
+    height: 200px !important;
+    width: 240px !important;
   }
   .clientCarousel {
     width: 290px; 
