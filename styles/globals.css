@@ -833,7 +833,7 @@ textarea::placeholder {
     height: 200px;
     width: 240px;
   }
-  
+
   .techimg {
     display: flex;
     justify-content: center;
@@ -845,6 +845,20 @@ textarea::placeholder {
   }
 }
 @media only screen and (max-width: 700px) {
+  .scratchbg
+  {
+    height: 200px;
+    width: 240px;
+  }
+  .cardscratch{
+    height: 200px;
+    width: 240px;
+  }
+  .cardscratchinner
+  {
+    height: 200px;
+    width: 240px;
+  }
   .techimg {
     display: flex;
     justify-content: center;
@@ -856,6 +870,20 @@ textarea::placeholder {
   }
 }
 @media only screen and (max-width: 520px) {
+  .scratchbg
+  {
+    height: 200px;
+    width: 240px;
+  }
+  .cardscratch{
+    height: 200px;
+    width: 240px;
+  }
+  .cardscratchinner
+  {
+    height: 200px;
+    width: 240px;
+  }
   .techimg {
     display: flex;
     justify-content: center;
@@ -1034,6 +1062,20 @@ textarea::placeholder {
 
 /* devang's css */
 @media screen and (max-width: 640px) {
+  .scratchbg
+  {
+    height: 200px;
+    width: 240px;
+  }
+  .cardscratch{
+    height: 200px;
+    width: 240px;
+  }
+  .cardscratchinner
+  {
+    height: 200px;
+    width: 240px;
+  }
   .clientCarousel {
     width: 290px; 
     height: 100vh;
