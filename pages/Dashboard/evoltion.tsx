@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Accordion from "./accordion";
+import { useEffect, useState } from "react";
 
 const features = [
   {
@@ -61,6 +62,38 @@ const faqs = [
 ];
 
 const Evalution = () => {
+  const [rotateX, setRotateX] = useState([-30, -30, -30]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      features.forEach((_, index) => {
+        const sectionTop = document.getElementById(`evaluation-section-${index}`).offsetTop;
+        const sectionHeight = document.getElementById(`evaluation-section-${index}`).offsetHeight;
+
+        // Calculate the scroll progress within the section for each item
+        const scrollProgress = Math.min(1, (scrollTop - sectionTop + windowHeight) / sectionHeight);
+
+        // Calculate the rotation angle based on scroll progress for each item
+        const newRotateX = -30 + 30 * scrollProgress;
+
+        setRotateX(prevRotateX => {
+          const newRotateXArray = [...prevRotateX];
+          newRotateXArray[index] = newRotateX;
+          return newRotateXArray;
+        });
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="my-36">
       <div className="scratch ">
@@ -96,30 +129,33 @@ const Evalution = () => {
           together.
         </p>
 
-        {features.map((feature) => (
-          <>
-            <div className="container-3 bigCard rounded-xl px-16 pt-1 pb-20 space-y-16 sm:mt-16 mt-10">
-            <div className="gradiant2"></div>
+        <div id="evaluation-section" className="my-12">
+          {features.map((feature, index) => (
+            <div
+              key={feature.name}
+              id={`evaluation-section-${index}`}
+              className="container-3 rounded-xl px-16 py-10 space-y-16 sm:mt-16 mt-10 image-container"
+              style={{ transform: `perspective(1000px) rotateX(${rotateX[index]}deg) scale(1) translateY(-10px)` }}
+            >
               <div
                 key={feature.name}
                 className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 text-3xl "
               >
-                
                 <div className="mt-6 lg:col-span-9 lg:mt-0 xl:col-span-7">
                   <a
                     href="#"
-                    className="bg-white fc-2575FC  py-2.5   text-sm font-semibold text-white shadow-sm hover:bg-2575FC  rounded-3xl px-6"
+                    className="bg-white fc-2575FC  py-2.5  text-sm font-semibold text-white shadow-sm hover:bg-2575FC focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-3xl px-6"
                   >
                     {feature.btn}
                   </a>
-                  <h3 className="text-4xl text-white font-bold  pt-4">
+                  <h3 className="text-3xl text-white font-medium  pt-4">
                     {feature.name}
                   </h3>
-                  <p className="mt-2 text-lg txt2 font-normal">
+                  <p className="mt-2 text-sm txt2 font-thin">
                     {feature.description}
                   </p>
                   <div className="flex">
-                    <p className="mt-2 text-lg font-bold fc-2575FC">
+                    <p className="mt-2 text-sm font-medium fc-2575FC ">
                       View Case Study
                     </p>
                     <Image
@@ -144,8 +180,8 @@ const Evalution = () => {
                 </div>
               </div>
             </div>
-          </>
-        ))}
+          ))}
+        </div>
         <div className="flex justify-center my-10 ">
           <a
             href="#"
