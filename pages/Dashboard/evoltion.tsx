@@ -229,7 +229,6 @@ const Evalution = () => {
                       className="mt-3 ml-3"
                     />
                   </div>
-                  {/ <div className="background3"></div> /}
                 </div>
                 <div className="flex-auto lg:col-span-3 xl:col-span-5">
                   <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg ">
@@ -319,7 +318,6 @@ const Evalution = () => {
         </div>
       </div>
 
-      {/ FAQ /}
       <div className="grid lg:grid-cols-5 flex md:flex-col-reverse sm:flex-col-reverse gap-10">
         <div className="col-span-2">
           <h1 className=" text-5xl text-white ">Frequently Asked Questions </h1>
@@ -347,7 +345,6 @@ const Evalution = () => {
         </div>
       </div>
 
-      {/ form /}
 
       <div className="container-3 rounded-xl px-16 py-10  space-y-16  sm:mt-16 sm:pt-16 gap-4">
         <div className="flex flex-col lg:grid lg:grid-cols-2  text-3xl ">
