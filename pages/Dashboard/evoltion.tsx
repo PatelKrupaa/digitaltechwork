@@ -106,7 +106,7 @@ const Evalution = () => {
       <p className="text-white text-5xl font-medium text-center md:mx-12 sm:mx-12 lg:mx-72">
         Your Digital Evolution - Driven by Our Expertise
       </p>
-      <div className="flex lg:justify-center md:justify-center sm:justify-center my-7">
+      <div className="flex justify-center md:justify-center sm:justify-center my-7">
         <div className="scratchbg"></div>
         <div className="cardscratch">
           <div className="cardscratchinner"></div>
