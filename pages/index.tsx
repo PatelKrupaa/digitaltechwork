@@ -134,21 +134,40 @@ const DashboardPage = () => {
 
         {/* Header ends */}
         <h1 className="lg:text-title md:text-5xl min-[320px]:text-4xl sm:text-4xl  text-white lg:text-center lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 pt-60 font-bold min-[320px]:text-left">
-          Transforming Your Business Digitally With{" "}
-          <span className="fc-2575FC">Innovation</span>
+          <div className="fadess">
+            <h1 className="cssanimation sequence fadeInBottom">
+              {" "}
+              Transforming Your Business Digitally With{" "}
+              <span className="fc-2575FC">Innovation</span>
+              <p className="text-xl font-normal leading-7 text-white lg:text-center pt-7 lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 min-[320px]:text-left  ">
+                We help you redefine your digital experiences with cutting-edge
+                technology to drive dynamic business outcomes.
+              </p>
+              <div className="flex lg:justify-center py-6 lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 min-[320px]:justify-start">
+                <a
+                  href="#"
+                  className="bg-134EDF py-3 text-xl leading-4 py-4 font-medium  text-white shadow-sm hover:bg-134EDF  rounded-3xl px-6"
+                >
+                  Book a meeting
+                </a>
+              </div>
+            </h1>
+          </div>
+          {/* Transforming Your Business Digitally With{" "}
+          <span className="fc-2575FC">Innovation</span> */}
         </h1>
-        <p className="text-xl font-normal leading-7 text-white lg:text-center pt-7 lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 min-[320px]:text-left  ">
+        {/* <p className="text-xl font-normal leading-7 text-white lg:text-center pt-7 lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 min-[320px]:text-left  ">
           We help you redefine your digital experiences with cutting-edge
           technology to drive dynamic business outcomes.
-        </p>
-        <div className="flex lg:justify-center py-6 lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 min-[320px]:justify-start">
+        </p> */}
+        {/* <div className="flex lg:justify-center py-6 lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 min-[320px]:justify-start">
           <a
             href="#"
             className="bg-134EDF py-3 text-xl leading-4 py-4 font-medium  text-white shadow-sm hover:bg-134EDF  rounded-3xl px-6"
           >
             Book a meeting
           </a>
-        </div>
+        </div> */}
         <div className="circle1"></div>
         <div className="circle2"></div>
       </div>

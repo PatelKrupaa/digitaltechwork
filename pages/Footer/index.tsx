@@ -28,13 +28,13 @@ const navigation = {
     { name: "+1 386 977 9083", href: "#", icon: "/phone.svg" },
     { name: "+1 386 977 9083", href: "#", icon: "/phone.svg" },
     { name: "info@digitaltechworks.com", href: "#", icon: "/email.svg" },
-  ]
+  ],
 };
 
 const FooterPage = () => {
   return (
     <>
-      <div className="bg-footer px-20 pt-24">
+      <div className="bg-footer lg:px-20 pt-24 sm:px-10 md:px-10 min-[320px]:px-10">
         <Image src="/mainLogo.svg" width={200} height={60} alt="logo" />
 
         <footer className="" aria-labelledby="footer-heading">
@@ -112,7 +112,10 @@ const FooterPage = () => {
                               height={18}
                               width={18}
                             />
-                            <li key={item.name} className="pl-3">
+                            <li
+                              key={item.name}
+                              className="pl-3 overflow-hidden"
+                            >
                               <a
                                 href={item.href}
                                 className="text-sm leading-6 text-gray-300 hover:text-white"

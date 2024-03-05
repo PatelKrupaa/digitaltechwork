@@ -95,13 +95,14 @@ const Evalution = () => {
 
         {features.map((feature) => (
           <>
-            <div className="container-3 rounded-xl px-16 pt-1 pb-20 space-y-16 sm:mt-16 ">
-              <div className="gradiant2"></div>
+            <div className="container-3 rounded-xl px-16 pt-1 pb-20 space-y-16 sm:mt-16 mt-10">
+            <div className="gradiant2"></div>
               <div
                 key={feature.name}
-                className="flex sm:flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 text-3xl md:grid-cols-2 sm:grid-cols-2"
+                className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 text-3xl "
               >
-                <div className="lg:col-span-6 lg:mt-0 xl:col-span-5">
+                
+                <div className="mt-6 lg:col-span-9 lg:mt-0 xl:col-span-7">
                   <a
                     href="#"
                     className="bg-white fc-2575FC  py-2.5   text-sm font-semibold text-white shadow-sm hover:bg-2575FC  rounded-3xl px-6"
@@ -115,7 +116,7 @@ const Evalution = () => {
                     {feature.description}
                   </p>
                   <div className="flex">
-                    <p className="mt-2 text-lg font-bold fc-2575FC ">
+                    <p className="mt-2 text-lg font-bold fc-2575FC">
                       View Case Study
                     </p>
                     <Image
@@ -128,14 +129,13 @@ const Evalution = () => {
                   </div>
                   {/* <div className="background3"></div> */}
                 </div>
-                <div className="lg:col-span-6 lg:mt-0 xl:col-span-3"></div>
-                <div className="flex-auto lg:col-span-3 xl:col-span-4">
+                <div className="flex-auto lg:col-span-3 xl:col-span-5">
                   <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg ">
                     <Image
                       src={feature.imageSrc}
                       alt={feature.imageAlt}
-                      height={340}
-                      width={425}
+                      height={300}
+                      width={400}
                       className="object-cover object-center"
                     />
                   </div>

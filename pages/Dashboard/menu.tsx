@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Carousel } from "antd";
 
 const Menu = () => {
   const people = [
@@ -32,53 +33,99 @@ const Menu = () => {
     },
   ];
 
-  return (
-    <div className="bg-161616 z-10 overflow-x-auto">
-      <ul className="lg:h-36 grid  sm:grid-cols-3 lg:grid-cols-5 min-[320px]:grid-cols-2 navbuttons lg:pl-20">
-        {people.map((person) => (
-          <li key={person.id} className="col-span-1 flex justify-center min-[320px]:w-72 ">
-            <Image
-              width={150}
-              height={150}
-              className=" flex-shrink-0 rounded-full"
-              src={person.imageUrl}
-              alt=""
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
+  const contentStyle: React.CSSProperties = {
+    height: "160px",
+    color: "#fff",
+    lineHeight: "160px",
+    textAlign: "center",
+    background: "#364d79",
+  };
 
-//     <div class="nav">
-//     <ul class="navbuttons">
-//          <li>A lot of text</li>
-//          <li>Some text1</li>
-//          <li>Some text 2</li>
-//          <li>Some text text</li>
-//          <li>Some text1</li>
-//          <li>Some text 2</li>
-//          <li>Some text text</li>
-//          <li>Some text1</li>
-//          <li>Some text 2</li>
-//          <li>Some text text</li>
-//          <li>Some text1</li>
-//          <li>Some text 2</li>
-//          <li>Some text text</li>
-//          <li>A lot of text</li>
-//          <li>Some text1</li>
-//          <li>Some text 2</li>
-//          <li>Some text text</li>
-//          <li>Some text1</li>
-//          <li>Some text 2</li>
-//          <li>Some text text</li>
-//          <li>Some text1</li>
-//          <li>Some text 2</li>
-//          <li>Some text text</li>
-//          <li>Some text1</li>
-//          <li>Some text 2</li>
-//          <li>Some text text</li>
-//     </ul>
-// </div>
+  return (
+    <div className="bg-161616 z-10 overflow-x-auto lg:pl-10">
+      <Carousel autoplay slidesToShow={5} autoplaySpeed={2000} dots={false}>
+        <div>
+          {" "}
+          <Image
+            width={150}
+            height={150}
+            className=" flex-shrink-0 rounded-full "
+            src="/menu1.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          {" "}
+          <Image
+            width={150}
+            height={150}
+            className=" flex-shrink-0 rounded-full "
+            src="/menu2.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          {" "}
+          <Image
+            width={150}
+            height={150}
+            className=" flex-shrink-0 rounded-full "
+            src="/menu3.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          {" "}
+          <Image
+            width={150}
+            height={150}
+            className=" flex-shrink-0 rounded-full "
+            src="/menu4.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          {" "}
+          <Image
+            width={150}
+            height={150}
+            className=" flex-shrink-0 rounded-full "
+            src="/menu5.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          {" "}
+          <Image
+            width={150}
+            height={150}
+            className=" flex-shrink-0 rounded-full "
+            src="/menu1.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          {" "}
+          <Image
+            width={150}
+            height={150}
+            className=" flex-shrink-0 rounded-full "
+            src="/menu2.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          {" "}
+          <Image
+            width={150}
+            height={150}
+            className=" flex-shrink-0 rounded-full "
+            src="/menu3.svg"
+            alt=""
+          />
+        </div>
+      </Carousel>
+    </div>
   );
 };
 
