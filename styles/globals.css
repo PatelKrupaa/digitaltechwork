@@ -1063,10 +1063,10 @@ textarea::placeholder {
 }
 @keyframes revealCount {
   0%{
-    transform: translateY(100px);
+    transform: translateX(100px);
   }
   100%{
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -1092,7 +1092,7 @@ textarea::placeholder {
 }
 @keyframes revealCards {
   0%{
-    transform: translateY(100px);
+    transform: translateY(-500px);
   }
   100%{
     transform: translateY(0px);
