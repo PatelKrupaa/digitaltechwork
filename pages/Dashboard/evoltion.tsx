@@ -96,12 +96,11 @@ const Evalution = () => {
         {features.map((feature) => (
           <>
             <div className="  container-3 rounded-xl px-16 py-10 space-y-16 sm:mt-16 mt-10">
-            <div className="gradiant2"></div>
+              <div className="gradiant2"></div>
               <div
                 key={feature.name}
                 className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 text-3xl "
               >
-                
                 <div className="mt-6 lg:col-span-9 lg:mt-0 xl:col-span-7">
                   <a
                     href="#"
@@ -160,9 +159,10 @@ const Evalution = () => {
         <div className="col-span-2">
           <h1 className=" text-5xl text-white ">Frequently Asked Questions </h1>
           <p className="text-white">
-            Quick answers to common queries. We&apos;ve curated a resourceful space
-            to address your concerns. If you can&apos;t find what you&apos;re looking for,
-            feel free to reach out, and we&apos;ll be happy to assist you further.
+            Quick answers to common queries. We&apos;ve curated a resourceful
+            space to address your concerns. If you can&apos;t find what
+            you&apos;re looking for, feel free to reach out, and we&apos;ll be
+            happy to assist you further.
           </p>
         </div>
         <div className="background"></div>
@@ -185,32 +185,32 @@ const Evalution = () => {
 
       {/* form */}
 
-      <div className="container-3 rounded-xl px-16 py-10  space-y-16  sm:mt-16 sm:pt-16 gap-4">
+      <div className="container-3 rounded-xl lg:px-16 sm:px-10 md:px-10 min-[320px]:px-5 py-10  space-y-16  sm:mt-16 sm:pt-16 gap-4">
         <div className="flex flex-col lg:grid lg:grid-cols-2  text-3xl ">
-          <p className="text-5xl font-semibold text-white lg:w-full pt-10">
+          <p className="lg:text-5xl font-bold leading-14 text-white lg:w-full pt-10 min-[320px]:text-3xl min-[320px]:pb-3">
             Your journey to transformation begins now. Let’s build something
             brilliant together!
           </p>
 
-          <form className="justify-center grid lg:ml-32 md:mt-12 sm:mt-6">
+          <form className="justify-center grid lg:ml-32 md:mt-12 sm:mt-6 ">
             <input
               placeholder="Full Name"
-              className="bg-spl-grey lg:w-96  sm:w-80 md:w-96"
+              className="container-3 lg:w-96  sm:w-80 md:w-96 min-[320px]:w-80"
             />
             <br />
             <input
               placeholder="Email"
-              className="bg-spl-grey lg:w-96  sm:w-80 md:w-96"
+              className="container-3 lg:w-96  sm:w-80 md:w-96"
             />
             <br />
             <input
               placeholder="Mobile Number"
-              className="bg-spl-grey lg:w-96  sm:w-80 md:w-96"
+              className="container-3 lg:w-96  sm:w-80 md:w-96"
             />
             <br />
             <textarea
               placeholder="Hello there, I would like to talk about how to ..."
-              className="bg-spl-grey lg:w-96  sm:w-80 md:w-96"
+              className="container-3 lg:w-96  sm:w-80 md:w-96"
             />
             <a
               href="#"

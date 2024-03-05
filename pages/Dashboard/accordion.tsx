@@ -26,7 +26,7 @@ export default function Accordion({
     <div
       className={`my-2 py-2 ${
         accordionOpen ? "bg-2575FC" : "bg-footer"
-      } border-none rounded px-10 `}
+      } border-none rounded lg:px-10 min-[320px]:px-2 `}
     >
       <h2 className="pl-2">
         <button

@@ -120,32 +120,41 @@ const footerData = [
 
 const AboutUs = () => {
   return (
-    <div className="aboutUs px-20 ">
-      <div className="background"></div>
-      <div className=" grid grid-cols-3 text-white py-20 ">
-        <h1 className=" text-5xl col-span-1">About Us</h1>
-        <p className="text-left reliable companion px-10 col-span-2">
-          At the heart of innovation, we create digital solutions that
-          transcend boundaries. We&apos; re not just a tech company; we &apos;
-          re your partners in progress. From small steps to giant leaps,
-          we&apos;re here to redefine your digital experience – because your
-          success is our story.
-        </p>
+    <div className="aboutUs lg:px-20 md:px-8 sm:px-6 min-[320px]:px-4">
+      <div className="">
+        <div className="flex sm:flex-col min-[320px]:flex-col lg:grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 min-[320px]:grid-cols-1 text-white py-20 ">
+          <div className="background"></div>
+          <h1 className="text-5xl lg:col-span-1  md:col-span-6 sm:col-span-6 min-[320px]:cols-span-9 ">
+            About Us
+          </h1>
+          <p className="text-left reliable companion  lg:col-span-2 md:cols-span-6 min-[320px]:cols-span-9">
+            At the heart of innovation, we create digital solutions that
+            transcend boundaries. We&apos; re not just a tech company; we &apos;
+            re your partners in progress. From small steps to giant leaps,
+            we&apos;re here to redefine your digital experience – because your
+            success is our story.
+          </p>
+        </div>
       </div>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 md:gap-24 sm:gap-3 md:my-1 sm:my-1 ">
+      <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 min-[320px]:grid-cols-2 md:gap-8 sm:gap-3 md:my-1 sm:my-1 min-[320px]:gap-3 mb-3">
         {Data?.map((item) => {
           return (
-            <div key={item.id} className="flex flex-col container-3 lg:w-68 lg:h-40 sm:w-52 sm:h-30 md:w-52 md:h-48 rounded-3xl px-8 py-5 mt-1">
-              <div className="text-center lg:pb-6">
+            <div
+              key={item.id}
+              className="flex flex-col justify-center container-3 lg:w-72 lg:h-56 sm:w-72 sm:h-30 md:w-80 md:h-48 rounded-3xl px-8 py-5 min-[320px]:mt-2"
+            >
+              <div className="text-center ">
                 <CountUp
                   start={0}
                   end={item?.count}
                   duration={12}
-                  className="text-white text-4xl font-bold"
+                  className="text-white text-5xl font-bold min-[320px]:text-3xl"
                 />
-                <span className="fc-2575FC text-4xl font-bold ">+</span>
+                <span className="fc-2575FC text-5xl font-bold ml-3 min-[320px]:text-3xl">
+                  +
+                </span>
               </div>
-              <span className="text-white text-center text-lg font-bold ">
+              <span className="text-white text-center lg:text-2xl font-medium leading-9 min-[320px]:text-lg">
                 {" "}
                 {item?.name}
               </span>
@@ -157,10 +166,12 @@ const AboutUs = () => {
         <Image src="./video.svg" width={1720} height={400} alt="video" />
       </div>
 
-      <div className="background"></div>
-      <div className=" grid grid-cols-2 text-white py-20">
-        <h1 className=" text-5xl">What we do</h1>
-        <p className="text-left px-10">
+      <div className="flex sm:flex-col min-[320px]:flex-col lg:grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 min-[320px]:grid-cols-1 text-white py-20 ">
+        <div className="background"></div>
+        <h1 className="text-5xl lg:col-span-1 md:col-span-6 sm:col-span-6 min-[320px]:cols-span-9 ">
+          What we do
+        </h1>
+        <p className="text-left reliable companion lg:px-10 lg:col-span-2 md:cols-span-6 min-[320px]:cols-span-9 ">
           We&apos;re your digital architects, utilizing advanced visualization
           tools and cutting-edge tech stack to engineer custom software and
           app solutions. Specializing in full-stack services with a focus on
@@ -190,16 +201,15 @@ const AboutUs = () => {
       </div>
 
       <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 text-white py-20 gradiant1">
-
         <div>
           <h1 className="text-5xl">Why choose us?</h1>
-          <p className="text-left  sm:pt-3 md:pt-3">
-            Partnering with our team is like having a reliable companion on
-            your development journey and beyond. We&apos;re not just a company;
-            we &apos;re your dedicated allies, ensuring a personalized experience
+          <p className="text-left  sm:pt-3 md:pt-3 min-[320px]:pt-2">
+            Partnering with our team is like having a reliable companion on your
+            development journey and beyond. We&apos;re not just a company; we
+            &apos;re your dedicated allies, ensuring a personalized experience
             and unwavering support every step of the way.
           </p>
-          <div className="grid lg:grid-cols-2 mt-8 md:grid-cols-2 md:mb-4">
+          <div className="grid lg:grid-cols-2 mt-8 md:grid-cols-2 md:mb-4 ">
             {chooseUs?.map((item) => {
               return (
                 <div className="mt-5 flex items-center" key={item.id}>
@@ -216,6 +226,7 @@ const AboutUs = () => {
             height={425}
             width={550}
             alt="contactus"
+            className=" min-[320px]:pt-3 min-[320px]:flipImage md:flipImage sm:flipImage"
           />
         </div>
       </div>
@@ -229,7 +240,10 @@ const AboutUs = () => {
           {footerData?.map((item) => {
             return (
               <>
-                <div className="container-3  rounded-3xl px-10 py-5  " key={item.id}>
+                <div
+                  className="container-3  rounded-3xl px-10 py-5  "
+                  key={item.id}
+                >
                   <Image src={item.img} alt="img" height={150} width={250} />
                   <p className="text-white text-sm pt-8">{item?.address}</p>
                 </div>

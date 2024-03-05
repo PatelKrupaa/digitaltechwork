@@ -2,8 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.text-title {
+  font-size: 88px;
+}
+
 .bg-2575FC {
   background-color: #2575fc;
+}
+
+.bg-134EDF {
+  background-color: #134edf;
+}
+
+.bg-161616 {
+  background-color: #161616;
 }
 
 .fc-2575FC {
@@ -16,10 +32,6 @@
 
 .txt2 {
   color: rgba(255, 255, 255, 1);
-}
-
-.bg-menu {
-  background: rgba(22, 22, 22, 1) !important;
 }
 
 .background {
@@ -50,7 +62,7 @@
   left: 100px;
 }
 
-.container-3:nth-of-type(2) .gradiant2{
+.container-3:nth-of-type(2) .gradiant2 {
   /* opacity: 0; */
   position: absolute;
   background: rgba(37, 117, 252, 0.5);
@@ -61,7 +73,7 @@
   /* top: 120px;
   left: 100px; */
 }
-.container-3:nth-of-type(3) .gradiant2{
+.container-3:nth-of-type(3) .gradiant2 {
   /* opacity: 0; */
   position: absolute;
   background: rgba(37, 117, 252, 0.5);
@@ -100,7 +112,7 @@ input {
 
 input,
 input::placeholder {
-  font: 16px/3 sans-serif;
+  font: 16px/3 DM sans;
   color: white;
 }
 
@@ -115,9 +127,58 @@ textarea::placeholder {
   color: white;
 }
 
+.flipImage {
+  transform: scaleX(-1) !important;
+}
+
+/* scroll CSS */
+
+.navbuttons {
+  display: inline-block;
+  overflow: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  margin: 0 0 1em;
+  white-space: nowrap;
+}
+
+.navbuttons LI {
+  display: inline-block;
+  vertical-align: top;
+  /* width: 20rem; */
+}
+
+/* scroll css added */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.leading-14{
+  line-height: 72px;
+}
+
+
 .bg-container {
   margin: 0;
-  height: 60rem;
+  height: 50rem;
   width: 100%;
   overflow: hidden !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
@@ -164,7 +225,7 @@ textarea::placeholder {
   animation: box 10s infinite ease-in-out;
 }
 
-@keyframes box {
+/* @keyframes box {
   0%   {transform: translate(-10%, -20%);}
   15%   {transform: translate(220%,-20%);}
   25%   {transform: translate(170%,7%);}
@@ -196,7 +257,7 @@ textarea::placeholder {
   60%   {transform: translate(-10%,-20%);}
   80%   {transform: translate(100%,20%);}
   100%   {transform: translate(220%,50%);}
-}
+} */
 
 /* Tech stack animation  */
 .blocks {

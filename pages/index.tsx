@@ -12,8 +12,6 @@ const navigation = [
   { name: "Company", href: "#" },
 ];
 
-
-
 const DashboardPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -24,7 +22,7 @@ const DashboardPage = () => {
 
         <header className="">
           <nav
-            className="mx-28 flex max-w-full items-center justify-between py-6"
+            className="lg:mx-28 md:mx-12 sm:mx-12 xs:mx-10 min-[320px]:mx-10 flex max-w-full items-center justify-between py-6"
             aria-label="Global"
           >
             <div className="flex lg:flex-1">
@@ -59,16 +57,16 @@ const DashboardPage = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-semibold leading-6 text-white text-lg font-normal"
+                  className="font-normal leading-6 text-white text-lgl"
                 >
                   {item.name}
                 </a>
               ))}
             </div>
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end content-center">
               <a
                 href="#"
-                className="bg-2575FC  py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-2575FC focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-3xl px-6"
+                className="bg-2575FC pt-4 text-lg font-medium leading-4 h-12  text-white shadow-sm hover:bg-2575FC  rounded-3xl px-6"
               >
                 Talk to us
               </a>
@@ -114,7 +112,7 @@ const DashboardPage = () => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                        className="-mx-3 block rounded-lg px-3 py-2 font-normal leading-6 text-white text-lg"
                       >
                         {item.name}
                       </a>
@@ -135,18 +133,18 @@ const DashboardPage = () => {
         </header>
 
         {/* Header ends */}
-        <h1 className="text-7xl text-white text-center px-10 pt-60">
+        <h1 className="lg:text-title md:text-5xl min-[320px]:text-4xl sm:text-4xl  text-white lg:text-center lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 pt-60 font-bold min-[320px]:text-left">
           Transforming Your Business Digitally With{" "}
           <span className="fc-2575FC">Innovation</span>
         </h1>
-        <p className="text-md font-thin text-white text-center lg:px-72 pt-7 md:px-0 sm:px-0 ">
+        <p className="text-xl font-normal leading-7 text-white lg:text-center pt-7 lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 min-[320px]:text-left  ">
           We help you redefine your digital experiences with cutting-edge
           technology to drive dynamic business outcomes.
         </p>
-        <div className="flex justify-center py-5">
+        <div className="flex lg:justify-center py-6 lg:px-72 md:px-8 sm:px-6 min-[320px]:px-4 min-[320px]:justify-start">
           <a
             href="#"
-            className=" bg-2575FC py-3  text-sm font-semibold text-white shadow-sm hover:bg-2575FC focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-3xl px-6"
+            className="bg-134EDF py-3 text-xl leading-4 py-4 font-medium  text-white shadow-sm hover:bg-134EDF  rounded-3xl px-6"
           >
             Book a meeting
           </a>
@@ -159,8 +157,6 @@ const DashboardPage = () => {
       <FooterPage />
 
       {/* accordion test */}
-
-      
     </>
   );
 };
