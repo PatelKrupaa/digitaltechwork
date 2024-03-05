@@ -1107,9 +1107,13 @@ textarea::placeholder {
 @keyframes whyweLeft {
   0%{
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateY(200px);
   }
-  70%{
+  30%{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  50%{
     opacity: 1;
     transform: translateX(0px);
   }
@@ -1123,9 +1127,13 @@ textarea::placeholder {
 @keyframes whyweRight {
   0%{
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateY(200px);
   }
-  70%{
+  30%{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  50%{
     opacity: 1;
     transform: translateX(0px);
   }
@@ -1139,9 +1147,13 @@ textarea::placeholder {
 @keyframes footerData {
   0%{
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateY(200px);
   }
-  70%{
+  30%{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  50%{
     opacity: 1;
     transform: translateX(0px);
   }
