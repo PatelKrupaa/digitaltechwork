@@ -108,7 +108,7 @@ const TechStack = () => {
 
   return (
     <div className="">
-      {width > 1024 && (
+      {width >= 1024 && (
         <>
           <div className=" grid lg:grid-cols-3 md:grids-cols-2 sm:grids-cols-1 text-white py-12">
             <div className="background"></div>
