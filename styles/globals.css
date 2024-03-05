@@ -550,7 +550,6 @@ textarea::placeholder {
   display: none;
 }
 
-
 @media only screen and (max-width: 600px) {
   .bg-container .circle1 {
     position: absolute;
@@ -563,7 +562,7 @@ textarea::placeholder {
     filter: blur(130px);
     animation: box 10s infinite ease-in-out;
   }
-  
+
   .bg-container .circle2 {
     position: absolute;
     top: 0;
@@ -575,7 +574,7 @@ textarea::placeholder {
     border-radius: 50%;
     filter: blur(130px);
     animation: box2 10s infinite ease-in-out;
-  } 
+  }
 
   .background {
     position: absolute;
@@ -590,7 +589,7 @@ textarea::placeholder {
     filter: blur(100px);
     transform: translate(-10%, -30%);
   }
-  
+
   .background2 {
     position: absolute;
     background: radial-gradient(
@@ -604,7 +603,7 @@ textarea::placeholder {
     filter: blur(100px);
     transform: translate(100%, -30%);
   }
-  
+
   .background3 {
     position: relative;
     background: rgba(37, 117, 252, 0.6);
@@ -613,6 +612,45 @@ textarea::placeholder {
     filter: blur(100px);
     top: 120px;
     left: 100px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .background2 {
+    position: absolute;
+    background: radial-gradient(
+      circle,
+      rgba(37, 117, 252, 0.4) 200%,
+      rgba(37, 117, 252, 0.4) 30%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    height: 350px;
+    width: 130px;
+    filter: blur(100px);
+    transform: translate(100%, -30%);
+  }
+
+  .container-3:nth-of-type(3) .gradiant2 {
+    position: absolute;
+    background: rgba(37, 117, 252, 0.5);
+    height: 200px;
+    width: 0px;
+    filter: blur(120px);
+    transform: translate(350%, 200%);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container-3:nth-of-type(3) .gradiant2 {
+    /* opacity: 0; */
+    position: absolute;
+    background: rgba(37, 117, 252, 0.5);
+    height: 200px;
+    width: 0px;
+    filter: blur(120px);
+    transform: translate(350%, 200%);
+    /* top: 120px;
+    left: 100px; */
   }
 }
 
@@ -634,26 +672,347 @@ textarea::placeholder {
   text-align: center;
 } */
 
-.cssanimation, .cssanimation span {
+.cssanimation,
+.cssanimation span {
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite; /* Add this line */
 }
 
-.cssanimation span { display: inline-block }
+.cssanimation span {
+  display: inline-block;
+}
 
-.fadeInBottom { animation-name: fadeInBottom }
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
 @keyframes fadeInBottom {
   from {
-      opacity: 0;
-      transform: translateY(100%);
+    opacity: 0;
+    transform: translateY(100%);
   }
-  to { opacity: 1 }
+  to {
+    opacity: 1;
+  }
 }
 
 /* ant design corousel */
 
-:where(.css-dev-only-do-not-override-1drr2mu).ant-carousel .slick-list .slick-slide >div>div {
+:where(.css-dev-only-do-not-override-1drr2mu).ant-carousel
+  .slick-list
+  .slick-slide
+  > div
+  > div {
   vertical-align: bottom;
   display: -webkit-inline-box !important;
+}
+
+/* mehul's css */
+
+.navmenuTechStack {
+  z-index: 1000;
+}
+
+.techstackimg {
+  display: none;
+}
+.nav01.active {
+  border-radius: 10px;
+}
+.nav02.active {
+  border-radius: 10px;
+}
+.nav03.active {
+  border-radius: 10px;
+}
+.nav01.active .techstackimg {
+  display: block;
+}
+.nav02.active .techstackimg {
+  display: block;
+}
+.nav03.active .techstackimg {
+  display: block;
+}
+.navTechStack01 {
+  background: rgba(255, 255, 255, 0.15);
+}
+.nav01.active .navTechStack01 {
+  background: #2575fc;
+}
+.navTechStack02 {
+  background: rgba(255, 255, 255, 0.15);
+}
+.nav02.active .navTechStack02 {
+  background: #2575fc;
+}
+.navTechStack03 {
+  background: rgba(255, 255, 255, 0.15);
+}
+.nav03.active .navTechStack03 {
+  background: #2575fc;
+}
+
+.openSourcesContent {
+  display: none;
+}
+.openSourcesContent.active {
+  display: block;
+  animation: reveal 2s ease;
+}
+.openSourcesContent.active .line p {
+  animation: revealText 3s ease;
+}
+.MobilityContent {
+  display: none;
+}
+.MobilityContent.active {
+  display: block;
+  animation: reveal 2s ease;
+}
+.MobilityContent.active .line p {
+  animation: revealText 3s ease;
+}
+.UIUXDesign {
+  display: none;
+}
+.UIUXDesign.active {
+  display: block;
+  animation: reveal 2s ease;
+}
+.UIUXDesign.active .line p {
+  animation: revealText 3s ease;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes revealText {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .techimg {
+    display: flex;
+    justify-content: center;
+  }
+  .techimg img {
+    height: 400px;
+    width: 500px;
+    animation: revealMobileView 0.8s ease;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .techimg {
+    display: flex;
+    justify-content: center;
+  }
+  .techimg img {
+    height: 400px;
+    width: 500px;
+    animation: revealMobileView 0.8s ease;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .techimg {
+    display: flex;
+    justify-content: center;
+  }
+  .techimg img {
+    height: 200px;
+    width: 300px;
+    animation: revealMobileView 0.8s ease;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .techimg {
+    display: flex;
+    justify-content: center;
+  }
+  .techimg img {
+    height: 180px;
+    width: 250px;
+    animation: revealMobileView 0.8s ease;
+  }
+}
+@keyframes revealMobileView {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* mehul's add on */
+
+.navmenuTechStack {
+  z-index: 1000;
+}
+
+.techstackimg {
+  display: none;
+}
+.nav01.active {
+  border-radius: 10px;
+}
+.nav02.active {
+  border-radius: 10px;
+}
+.nav03.active {
+  border-radius: 10px;
+}
+.nav01.active .techstackimg {
+  display: block;
+}
+.nav02.active .techstackimg {
+  display: block;
+}
+.nav03.active .techstackimg {
+  display: block;
+}
+.navTechStack01 {
+  background: rgba(255, 255, 255, 0.15);
+}
+.nav01.active .navTechStack01 {
+  background: #2575fc;
+}
+.navTechStack02 {
+  background: rgba(255, 255, 255, 0.15);
+}
+.nav02.active .navTechStack02 {
+  background: #2575fc;
+}
+.navTechStack03 {
+  background: rgba(255, 255, 255, 0.15);
+}
+.nav03.active .navTechStack03 {
+  background: #2575fc;
+}
+
+.openSourcesContent {
+  display: none;
+}
+.openSourcesContent.active {
+  display: block;
+  animation: reveal 2s ease;
+}
+.openSourcesContent.active .line p {
+  animation: revealText 3s ease;
+}
+.MobilityContent {
+  display: none;
+}
+.MobilityContent.active {
+  display: block;
+  animation: reveal 2s ease;
+}
+.MobilityContent.active .line p {
+  animation: revealText 3s ease;
+}
+.UIUXDesign {
+  display: none;
+}
+.UIUXDesign.active {
+  display: block;
+  animation: reveal 2s ease;
+}
+.UIUXDesign.active .line p {
+  animation: revealText 3s ease;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes revealText {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .techimg {
+    display: flex;
+    justify-content: center;
+  }
+  .techimg img {
+    height: 400px;
+    width: 500px;
+    animation: revealMobileView 0.8s ease;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .techimg {
+    display: flex;
+    justify-content: center;
+  }
+  .techimg img {
+    height: 400px;
+    width: 500px;
+    animation: revealMobileView 0.8s ease;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .techimg {
+    display: flex;
+    justify-content: center;
+  }
+  .techimg img {
+    height: 200px;
+    width: 300px;
+    animation: revealMobileView 0.8s ease;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .techimg {
+    display: flex;
+    justify-content: center;
+  }
+  .techimg img {
+    height: 180px;
+    width: 250px;
+    animation: revealMobileView 0.8s ease;
+  }
+}
+@keyframes revealMobileView {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
