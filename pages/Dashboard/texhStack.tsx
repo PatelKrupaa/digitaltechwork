@@ -26,36 +26,39 @@ const TechStacks = [
   },
 ];
 
-const AccordionItem = ({ header, ...rest }) => (
-  <Item
-    {...rest}
-    header={({ state: { isEnter } }) => (
-      <>
-        {header}
-        <img
-          className={`ml-auto transition-transform duration-200 ease-out ${
-            isEnter && "rotate-180"
-          }`}
-          src="/downArrow.svg"
-          alt="Chevron"
-        />
-      </>
-    )}
-    className="border-b"
-    buttonProps={{
-      className: ({ isEnter }) =>
-        `flex w-full bg-gray p-4 text-left hover:bg-gray ${
-          isEnter && "bg-2575FC"
-        }`,
-    }}
-    contentProps={{
-      className: "transition-height duration-200 ease-out",
-    }}
-    panelProps={{ className: "p-4" }}
-  />
-);
+
 
 const TechStack = () => {
+
+  const AccordionItem = ({ header, ...rest } : { header: any, [key: string]: any }) => (
+    <Item
+      {...rest}
+      header={({ state: { isEnter } }) => (
+        <>
+          {header}
+          <img
+            className={`ml-auto transition-transform duration-200 ease-out ${
+              isEnter && "rotate-180"
+            }`}
+            src="/downArrow.svg"
+            alt="Chevron"
+          />
+        </>
+      )}
+      className="border-b"
+      buttonProps={{
+        className: ({ isEnter }) =>
+          `flex w-full bg-gray p-4 text-left hover:bg-gray ${
+            isEnter && "bg-2575FC"
+          }`,
+      }}
+      contentProps={{
+        className: "transition-height duration-200 ease-out",
+      }}
+      panelProps={{ className: "p-4" }}
+    />
+  );
+
   const [width, setWidth] = useState(0);
   console.log(width);
 
