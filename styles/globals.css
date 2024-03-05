@@ -1016,3 +1016,39 @@ textarea::placeholder {
     transform: translateY(0px);
   }
 }
+
+/* devang's css */
+@media screen and (max-width: 640px) {
+  .clientCarousel {
+    width: 290px; 
+    height: 100vh;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+:where(.css-dev-only-do-not-override-1drr2mu).ant-carousel .slick-dots {
+  position: absolute;
+  inset-inline-end: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  z-index: 15;
+  display: flex !important;
+  justify-content: start;
+  padding-inline-start: 0;
+  margin: 0;
+  list-style: none;
+}
