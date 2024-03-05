@@ -182,7 +182,7 @@ const Evalution = () => {
         </a>
       </div>
 
-      {/ Success In Action /}
+
       <div className="mt-20">
         <div className="background2"></div>
         <p className="text-white text-5xl font-thin text-center md:mx-12 sm:mx-12 lg:mx-72">
