@@ -56,7 +56,7 @@ const TechStack = () => {
               <div className="lg:flex lg:flex-1 md:flex sm:flex  mt-3" key={item.id}>
                 <a
                   href="#"
-                  className="flex w-64 bg-spl-grey lg:w-96 md:w-56 sm:w-40 h-14  py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-2575FC focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-xl px-6 gap-3"
+                  className="flex w-64 container-3 lg:w-96 md:w-56 sm:w-40 h-14  py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-2575FC focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-xl px-6 gap-3"
                 >
                   <span>{item.id}</span>
                   <span className="lg:px-6 md:px-4 sm:px-1">{item?.title}</span>

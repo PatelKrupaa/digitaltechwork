@@ -36,20 +36,31 @@ body {
 
 .background {
   position: absolute;
-  background: rgba(37, 117, 252, 1);
-  height: 200px;
-  width: 200px;
+  /* background: rgba(37, 117, 252, 1); */
+  background: radial-gradient(circle,
+  rgba(37, 117, 252, 0.4) 200%,
+  rgba(37, 117, 252, 0.4) 30%,
+  rgba(255, 255, 255, 0) 70%);
+  height: 350px;
+  width: 430px;
   filter: blur(100px);
+  transform: translate(-10% , -30%);
 }
 
 .background2 {
-  position: relative;
-  background: rgba(37, 117, 252, 0.6);
+  position: absolute;
+  /* background: rgba(37, 117, 252, 0.6);
   height: 200px;
-  width: 260px;
+  width: 260px; */
+  background: radial-gradient(circle,
+  rgba(37, 117, 252, 0.4) 200%,
+  rgba(37, 117, 252, 0.4) 30%,
+  rgba(255, 255, 255, 0) 70%);
+  height: 350px;
+  width: 430px;
   filter: blur(100px);
-  top: 120px;
-  left: 500px;
+  transform: translate(100% , -30%);
+
 }
 
 .background3 {
@@ -86,7 +97,8 @@ body {
 }
 
 .aboutUs {
-  background-color: #1b1b1b;
+  background-color: 
+  #000000;
   width: 100%;
   background-size: cover;
   animation: animate 20s infinite ease alternate;

@@ -3,7 +3,7 @@ import Accordion from "./accordion";
 
 const features = [
   {
-    name: "Web Design Project Title Goes Here",
+    name: "App Design Project Title Goes Here",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut. sed do eiusmod tempor incididunt ut.",
     imageSrc: "/action1.svg",
@@ -62,7 +62,7 @@ const faqs = [
 
 const Evalution = () => {
   return (
-    <div className="my-24">
+    <div className="my-36">
       <div className="background2 "></div>
       <p className="text-white text-5xl font-medium text-center md:mx-12 sm:mx-12 lg:mx-72">
         Your Digital Evolution - Driven by Our Expertise
@@ -95,27 +95,27 @@ const Evalution = () => {
 
         {features.map((feature) => (
           <>
-            <div className="  container-3 rounded-xl px-16 py-10 space-y-16 sm:mt-16 mt-10">
+            <div className="container-3 rounded-xl px-16 pt-1 pb-20 space-y-16 sm:mt-16 ">
               <div className="gradiant2"></div>
               <div
                 key={feature.name}
-                className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 text-3xl "
+                className="flex sm:flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 text-3xl md:grid-cols-2 sm:grid-cols-2"
               >
-                <div className="mt-6 lg:col-span-9 lg:mt-0 xl:col-span-7">
+                <div className="lg:col-span-6 lg:mt-0 xl:col-span-5">
                   <a
                     href="#"
-                    className="bg-white fc-2575FC  py-2.5  text-sm font-semibold text-white shadow-sm hover:bg-2575FC focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-3xl px-6"
+                    className="bg-white fc-2575FC  py-2.5   text-sm font-semibold text-white shadow-sm hover:bg-2575FC  rounded-3xl px-6"
                   >
                     {feature.btn}
                   </a>
-                  <h3 className="text-3xl text-white font-medium  pt-4">
+                  <h3 className="text-4xl text-white font-bold  pt-4">
                     {feature.name}
                   </h3>
-                  <p className="mt-2 text-sm txt2 font-thin">
+                  <p className="mt-2 text-lg txt2 font-normal">
                     {feature.description}
                   </p>
                   <div className="flex">
-                    <p className="mt-2 text-sm font-medium fc-2575FC ">
+                    <p className="mt-2 text-lg font-bold fc-2575FC ">
                       View Case Study
                     </p>
                     <Image
@@ -128,13 +128,14 @@ const Evalution = () => {
                   </div>
                   {/* <div className="background3"></div> */}
                 </div>
-                <div className="flex-auto lg:col-span-3 xl:col-span-5">
+                <div className="lg:col-span-6 lg:mt-0 xl:col-span-3"></div>
+                <div className="flex-auto lg:col-span-3 xl:col-span-4">
                   <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg ">
                     <Image
                       src={feature.imageSrc}
                       alt={feature.imageAlt}
-                      height={300}
-                      width={400}
+                      height={340}
+                      width={425}
                       className="object-cover object-center"
                     />
                   </div>

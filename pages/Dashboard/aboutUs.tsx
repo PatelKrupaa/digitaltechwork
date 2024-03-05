@@ -122,12 +122,12 @@ const AboutUs = () => {
   return (
     <div className="aboutUs lg:px-20 md:px-8 sm:px-6 min-[320px]:px-4">
       <div className="">
-        <div className="flex sm:flex-col min-[320px]:flex-col lg:grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 min-[320px]:grid-cols-1 text-white py-20 ">
+        <div className="flex sm:flex-col min-[320px]:flex-col lg:grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 min-[320px]:grid-cols-1 text-white py-24 ">
           <div className="background"></div>
           <h1 className="text-5xl lg:col-span-1  md:col-span-6 sm:col-span-6 min-[320px]:cols-span-9 ">
             About Us
           </h1>
-          <p className="text-left reliable companion  lg:col-span-2 md:cols-span-6 min-[320px]:cols-span-9">
+          <p className="text-left text-xl font-normal leading-7 lg:col-span-2 md:cols-span-6 min-[320px]:cols-span-9">
             At the heart of innovation, we create digital solutions that
             transcend boundaries. We&apos; re not just a tech company; we &apos;
             re your partners in progress. From small steps to giant leaps,
@@ -141,7 +141,7 @@ const AboutUs = () => {
           return (
             <div
               key={item.id}
-              className="flex flex-col justify-center container-3 lg:w-72 lg:h-56 sm:w-72 sm:h-30 md:w-80 md:h-48 rounded-3xl px-8 py-5 min-[320px]:mt-2"
+              className="flex flex-col justify-center container-3 rounded-3xl px-8 py-20 "
             >
               <div className="text-center ">
                 <CountUp

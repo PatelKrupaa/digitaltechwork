@@ -32,13 +32,9 @@ const Menu = () => {
     },
   ];
 
-
-  const data = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 8', 'Item 9', 'Item 10'];
-
-
   return (
     <div className="bg-161616 z-10 overflow-x-auto">
-      <ul className="lg:h-36 grid  sm:grid-cols-3 lg:grid-cols-5 min-[320px]:grid-cols-2 navbuttons lg:px-20">
+      <ul className="lg:h-36 grid  sm:grid-cols-3 lg:grid-cols-5 min-[320px]:grid-cols-2 navbuttons lg:pl-20">
         {people.map((person) => (
           <li key={person.id} className="col-span-1 flex justify-center min-[320px]:w-72 ">
             <Image
