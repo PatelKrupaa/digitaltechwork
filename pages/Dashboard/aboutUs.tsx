@@ -136,7 +136,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 min-[320px]:grid-cols-2 md:gap-8 sm:gap-3 md:my-1 sm:my-1 min-[320px]:gap-3 mb-3">
+      <div className="grid countData lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 min-[320px]:grid-cols-2 md:gap-8 sm:gap-3 md:my-1 sm:my-1 min-[320px]:gap-3 mb-3">
         {Data?.map((item) => {
           return (
             <div
@@ -162,7 +162,7 @@ const AboutUs = () => {
           );
         })}
       </div>
-      <div className="lg:my-20 md:my-16 sm:my-16">
+      <div className="video lg:my-20 md:my-16 sm:my-16">
         <Image src="./video.svg" width={1720} height={400} alt="video" />
       </div>
 
@@ -180,7 +180,7 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-14 sm:grid-cols-1 md:grid-cols-2">
+      <div className="grid cards lg:grid-cols-3 gap-14 sm:grid-cols-1 md:grid-cols-2">
         {Technology?.map((item) => {
           return (
             <div className="container-3 rounded-3xl px-10 py-5" key={item.icon}>
@@ -201,7 +201,7 @@ const AboutUs = () => {
       </div>
 
       <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 text-white py-20 gradiant1">
-        <div>
+        <div className="whyweLeft">
           <h1 className="text-5xl">Why choose us?</h1>
           <p className="text-left  sm:pt-3 md:pt-3 min-[320px]:pt-2">
             Partnering with our team is like having a reliable companion on your
@@ -220,7 +220,7 @@ const AboutUs = () => {
             })}
           </div>
         </div>
-        <div className="flex justify-end">
+        <div className="whyweRight flex justify-end">
           <Image
             src="/contactUs.svg"
             height={425}
@@ -236,7 +236,7 @@ const AboutUs = () => {
 
       {/* Footer  */}
       <div className="pb-20">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1  gap-10 mt-10">
+        <div className="footerData grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1  gap-10 mt-10">
           {footerData?.map((item) => {
             return (
               <>

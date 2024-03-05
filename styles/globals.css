@@ -1052,3 +1052,205 @@ textarea::placeholder {
   margin: 0;
   list-style: none;
 }
+
+
+
+/* animation in whole file */
+
+.aboutUs .countData {
+  animation: revealCount 2s ease;
+  animation-timeline: view();
+}
+@keyframes revealCount {
+  0%{
+    transform: translateY(100px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.aboutUs .video
+{
+  overflow: hidden;
+  animation: revealVideo .5s ease;
+  animation-timeline: view();
+}
+@keyframes revealVideo {
+  0%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.aboutUs .cards
+{
+  animation: revealCards 2s ease;
+  animation-timeline: view();
+}
+@keyframes revealCards {
+  0%{
+    transform: translateX(100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.aboutUs .whyweLeft
+{
+  animation: whyweLeft 2s ease;
+  animation-timeline: view();
+}
+@keyframes whyweLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.aboutUs .whyweRight
+{
+  animation: whyweRight 2s ease;
+  animation-timeline: view();
+}
+@keyframes whyweRight {
+  0%{
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.aboutUs .footerData
+{
+  animation: footerData 2s ease;
+  animation-timeline: view();
+}
+@keyframes footerData {
+  0%{
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.aboutUs .cards .container-3:hover
+{
+  transition: .2s all ease-in-out;
+  transform: scale(1.04);
+  box-shadow: 0 0 60px rgba(125, 125, 125, 0.1);
+}
+
+.scratch
+{
+  animation: scratch 2s ease;
+  animation-timeline: view();
+}
+@keyframes scratch {
+  0%{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  30%{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.bigCard:nth-of-type(1)
+{
+  animation: firstC3 2s ease;
+  animation-timeline: view();
+}
+@keyframes firstC3 {
+  0%{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.bigCard:nth-of-type(2)
+{
+  animation: secondc3 2s ease;
+  animation-timeline: view();
+}
+@keyframes secondc3 {
+  0%{
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.bigCard:nth-of-type(3)
+{
+  animation: thirdc3 2s ease;
+  animation-timeline: view();
+}
+@keyframes thirdc3 {
+  0%{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+.faqaccord{
+  animation: faq 2s ease;
+  animation-timeline: view();
+}
+@keyframes faq {
+  0%{
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+.contactus{
+  animation: contactus 2s ease;
+  animation-timeline: view();
+}
+@keyframes contactus {
+  0%{
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+

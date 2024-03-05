@@ -63,7 +63,7 @@ const faqs = [
 const Evalution = () => {
   return (
     <div className="my-36">
-      <div className="background2 "></div>
+      <div className="scratch ">
       <p className="text-white text-5xl font-medium text-center md:mx-12 sm:mx-12 lg:mx-72">
         Your Digital Evolution - Driven by Our Expertise
       </p>
@@ -79,7 +79,7 @@ const Evalution = () => {
           Activate your Free Trail
         </a>
       </div>
-
+      </div>
       {/* Success In Action */}
       <div className="mt-20">
         <div className="background2"></div>
@@ -95,7 +95,7 @@ const Evalution = () => {
 
         {features.map((feature) => (
           <>
-            <div className="container-3 rounded-xl px-16 pt-1 pb-20 space-y-16 sm:mt-16 mt-10">
+            <div className="container-3 bigCard rounded-xl px-16 pt-1 pb-20 space-y-16 sm:mt-16 mt-10">
             <div className="gradiant2"></div>
               <div
                 key={feature.name}
@@ -168,7 +168,7 @@ const Evalution = () => {
         </div>
         <div className="background"></div>
 
-        <div className="col-span-3 md:col-span-3 ">
+        <div className="faqaccord col-span-3 md:col-span-3 ">
           <div className="divide-y divide-slate-200">
             {faqs.map((faq, index) => (
               <Accordion
@@ -186,7 +186,7 @@ const Evalution = () => {
 
       {/* form */}
 
-      <div className="container-3 rounded-xl lg:px-16 sm:px-10 md:px-10 min-[320px]:px-5 py-10  space-y-16  sm:mt-16 sm:pt-16 gap-4">
+      <div className="contactus container-3 rounded-xl lg:px-16 sm:px-10 md:px-10 min-[320px]:px-5 py-10  space-y-16  sm:mt-16 sm:pt-16 gap-4">
         <div className="flex flex-col lg:grid lg:grid-cols-2  text-3xl ">
           <p className="lg:text-5xl font-bold leading-14 text-white lg:w-full pt-10 min-[320px]:text-3xl min-[320px]:pb-3">
             Your journey to transformation begins now. Let’s build something
