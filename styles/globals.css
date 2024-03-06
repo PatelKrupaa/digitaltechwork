@@ -556,7 +556,7 @@ textarea::placeholder {
     top: 0;
     left: 0;
     height: 500px;
-    width: 200px;
+    width: 100px;
     background: rgba(61, 107, 192, 0.35);
     border-radius: 50%;
     filter: blur(130px);
@@ -568,7 +568,7 @@ textarea::placeholder {
     top: 0;
     left: 0;
     height: 500px;
-    width: 200px;
+    width: 100px;
     overflow-y: hidden;
     background: rgba(61, 107, 192, 0.35);
     border-radius: 50%;
@@ -585,7 +585,7 @@ textarea::placeholder {
       rgba(255, 255, 255, 0) 70%
     );
     height: 350px;
-    width: 230px;
+    width: 100px;
     filter: blur(100px);
     transform: translate(-10%, -30%);
   }
@@ -599,7 +599,7 @@ textarea::placeholder {
       rgba(255, 255, 255, 0) 70%
     );
     height: 350px;
-    width: 130px;
+    width: 100px;
     filter: blur(100px);
     transform: translate(100%, -30%);
   }
