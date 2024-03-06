@@ -585,7 +585,7 @@ textarea::placeholder {
       rgba(255, 255, 255, 0) 70%
     );
     height: 350px;
-    width: 100px;
+    width: 230px;
     filter: blur(100px);
     transform: translate(-10%, -30%);
   }
@@ -599,7 +599,7 @@ textarea::placeholder {
       rgba(255, 255, 255, 0) 70%
     );
     height: 350px;
-    width: 100px;
+    width: 130px;
     filter: blur(100px);
     transform: translate(100%, -30%);
   }
